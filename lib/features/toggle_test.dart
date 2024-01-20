@@ -57,11 +57,6 @@ class _MyTimePickerState extends State<MyTimePicker> {
   }
 }
 
-
-
-
-
-
 // class MyTimePicker extends StatefulWidget {
 //   @override
 //   _MyTimePickerState createState() => _MyTimePickerState();
@@ -114,9 +109,6 @@ class _MyTimePickerState extends State<MyTimePicker> {
 //   }
 // }
 
-
-
-
 // class MyTimePicker extends StatefulWidget {
 //   @override
 //   _MyTimePickerState createState() => _MyTimePickerState();
@@ -142,7 +134,7 @@ class _MyTimePickerState extends State<MyTimePicker> {
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
-      
+
 //       body: Column(
 //         mainAxisAlignment: MainAxisAlignment.center,
 //         children: [
@@ -160,16 +152,6 @@ class _MyTimePickerState extends State<MyTimePicker> {
 //     );
 //   }
 // }
-
-
-
-
-
-
-
-
-
-
 
 /***************************************************************************************************************************************************************************** */
 
@@ -237,10 +219,7 @@ class _MyTimePickerState extends State<MyTimePicker> {
 //   }
 // }
 
-
 /********************************************************************************* */
-
-
 
 // class ToggleButtonsExample extends StatefulWidget {
 //   @override
@@ -288,10 +267,6 @@ class _MyTimePickerState extends State<MyTimePicker> {
 //     );
 //   }
 // }
-
-
-
-
 
 // **************************************************************************
 

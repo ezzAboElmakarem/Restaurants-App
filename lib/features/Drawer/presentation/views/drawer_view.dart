@@ -295,4 +295,3 @@ class DrawerWidget extends StatelessWidget {
 }
 
 // ignore: camel_case_types, must_be_immutable
-

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:resturant_project/features/delivery_screen/presentation/views/delivery_screen.dart';
 import '../../../../core/assets/consts.dart';
 import '../../../../core/shared_component/component.dart';
 import '../../../Drawer/presentation/views/drawer_view.dart';
-import '../../../delivery_screen/presentation/views/delivery_screen.dart';
 import '../../../filters_bottom_sheet/presentation/views/filter_bottom_sheet.dart';
 import '../../../pick_up_screen/presentation/views/pick_up_screen.dart';
 import '../../../search/presentation/views/search_page.dart';

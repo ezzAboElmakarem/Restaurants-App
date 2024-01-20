@@ -6,7 +6,7 @@ String? userToken;
 
 class ColorStyles {
   //static Color secondColor = const Color(0xFF081740);
-  static Color secondColor = const Color(0xC9FFEAE4);
+  static Color secondColor = const Color(0xffFFEAE4);
   static Color thirdColor = const Color(0xFFFFF2EF);
   static Color gridbackgroundcolor = Colors.grey.shade200;
   static Color textColor = const Color(0xff081841);
