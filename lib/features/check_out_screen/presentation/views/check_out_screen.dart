@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:resturant_project/features/check_out_screen/data/repos/check_out_repo_imp.dart';
+import 'package:resturant_project/features/check_out_screen/presentation/manager/cubit/payment_cubit.dart';
+import 'package:resturant_project/features/check_out_screen/presentation/views/widgets/payment_widget.dart';
 import '../../../../core/assets/consts.dart';
 import '../../../../core/shared_component/component.dart';
 import '../../../../core/styles.dart';
@@ -96,12 +100,11 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
                     SizedBox(
                       height: 8.h,
                     ),
-                    DetailsTypesWidget(
-                      successImage: true,
-                      imageUrl: 'lib/core/assets/images/paypal.png',
-                      title: 'Pay with',
-                      subTitle1: 'PayPal or else',
-                    ),
+                    BlocProvider(
+                        create: (context) => PaymentCubit(CheckoutRepoImpl()),
+                        child: PayementWidget(
+                          isLoading: false,
+                        )),
                     SizedBox(
                       height: 24.h,
                     ),
@@ -135,7 +138,7 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
                               color: ColorStyles.greyColor,
                               fontWeight: FontWeight.w700),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Transform.scale(
                           scale: .7,
                           child: Switch(

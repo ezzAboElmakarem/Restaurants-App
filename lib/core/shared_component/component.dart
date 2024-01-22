@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:resturant_project/core/assets/consts.dart';
 import '../styles.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -413,11 +414,11 @@ class CustomButon extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          color: buttonColor,
-          borderRadius: BorderRadius.circular(8),
-        ),
-        width: MediaQuery.of(context).size.width * 0.4,
-        height: 50,
+            color: buttonColor,
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(color: ColorStyles.lightGreyColor)),
+        width: MediaQuery.of(context).size.width * 0.82,
+        height: 65.h,
         child: Center(
           child: isLoading
               ? const CircularProgressIndicator()
@@ -425,7 +426,7 @@ class CustomButon extends StatelessWidget {
                   text,
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 20.sp,
                       color: textColor),
                 ),
         ),

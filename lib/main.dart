@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:resturant_project/core/utils/api_secret_keys.dart';
 import 'features/tapbar_page/presentation/views/tapbar_page.dart';
 import 'core/assets/consts.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  Stripe.publishableKey = ApiKeys.publishableKey;
+  // Stripe.merchantIdentifier = 'any string works';
+  // await Stripe.instance.applySettings();
   runApp(const MyApp());
 }
 
